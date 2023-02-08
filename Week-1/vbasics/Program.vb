@@ -1,14 +1,14 @@
 Imports System
 
 Module Program
-' Main Method - starting point of program
+' main method - starting point of program
 ' 2 kinds of methods:
-' Functions - return something
-' Subs - return nothing or void
+' functions - return something
+' subs - return nothing or void
     Sub Main(args As String())
     ' vb has no grouping symbols like {}
-    ' Instead uses words/closing statements
-    ' Also, tabbing for documentation
+    ' instead uses words/closing statements
+    ' also, tabbing for documentation
     ' vb.net does not use semi colons (Will lead to errors)
         Console.WriteLine("Hello World!")
     ' variables - holds data, reference in memory, placeholder
@@ -18,6 +18,7 @@ Module Program
     dim greeting as String = greeter("casual")
     Console.WriteLine(greeting)
     GuessingGame(1)
+    Counter(3)
     End Sub
     ' set datatype with "as" keyword
     Function greeter(greeting_type as String) As String
@@ -46,6 +47,22 @@ Module Program
         Else
             Console.WriteLine("Correct guess")
         End If
+    End Sub
+
+    Sub Counter(stopping_point as Integer)
+        dim start as Integer = 0
+        ' while loop
+        While start < stopping_point
+            Console.WriteLine(start)
+            start = start + 1
+        End While
+
+        ' for loop
+        ' lower and upper bounds are included in iteration
+        For index As integer = 0 To stopping_point
+            Console.WriteLine(index)
+        Next
+        
     End Sub
 
 End Module
