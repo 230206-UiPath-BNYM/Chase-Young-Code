@@ -19,6 +19,7 @@ Module Program
     Console.WriteLine(greeting)
     GuessingGame(1)
     Counter(3)
+    GuessingGameV2()
     End Sub
     ' set datatype with "as" keyword
     Function greeter(greeting_type as String) As String
@@ -63,6 +64,30 @@ Module Program
             Console.WriteLine(index)
         Next
         
+    End Sub
+
+    Sub GuessingGameV2()
+        ' create a new instance of random class
+        dim rnd as Random = new Random()
+        dim mysteryNumber as Integer = rnd.Next(1,100)
+        Console.WriteLine("Enter guess: ")
+        dim guess as String = Console.ReadLine()
+        ' integer struct has a Parse method that converts strings
+        ' to their numeric values
+        ' TODO: add exception handling
+        dim guessNum as Integer = Integer.Parse(guess)
+        While guessNum <> mysteryNumber
+            'keep guessing
+            If guessNum < mysteryNumber Then
+                Console.WriteLine("Too low")
+            Else
+                Console.WriteLine("Too High")
+            End If
+            
+            Console.WriteLine("Enter guess: ")
+            guessNum = Integer.Parse(Console.ReadLine())
+        End While
+        Console.WriteLine("Congratulations! You guessed correctly")
     End Sub
 
 End Module
