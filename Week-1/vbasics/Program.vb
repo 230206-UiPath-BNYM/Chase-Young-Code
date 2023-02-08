@@ -75,7 +75,13 @@ Module Program
         ' integer struct has a Parse method that converts strings
         ' to their numeric values
         ' TODO: add exception handling
-        dim guessNum as Integer = Integer.Parse(guess)
+        dim guessNum as Integer = 0
+        Try
+            guessNum = Integer.Parse(guess)
+        Catch ex As Exception
+            Console.WriteLine("Invalid input, try again")
+        End Try
+        
         While guessNum <> mysteryNumber
             'keep guessing
             If guessNum < mysteryNumber Then
@@ -85,7 +91,11 @@ Module Program
             End If
             
             Console.WriteLine("Enter guess: ")
-            guessNum = Integer.Parse(Console.ReadLine())
+            Try
+                guessNum = Integer.Parse(Console.ReadLine())
+            Catch ex As Exception
+                Console.WriteLine("Invalid input, try again")
+            End Try
         End While
         Console.WriteLine("Congratulations! You guessed correctly")
     End Sub
