@@ -17,6 +17,7 @@ Module Program
     ' greeter function returns string that we are passing to the greeting variable
     dim greeting as String = greeter("casual")
     Console.WriteLine(greeting)
+    GuessingGame(1)
     End Sub
     ' set datatype with "as" keyword
     Function greeter(greeting_type as String) As String
@@ -34,5 +35,17 @@ Module Program
         End Select
     
     End Function
+
+    Sub GuessingGame(guess as Integer)
+        ' Use random class to generate random number
+        dim rnd as Random = new Random()
+        dim mysteryNumber as integer = rnd.Next(1,2)
+        ' Use <> to represent not equal, ie !=
+        If guess <> mysteryNumber Then
+            Console.WriteLine("Wrong guess")
+        Else
+            Console.WriteLine("Correct guess")
+        End If
+    End Sub
 
 End Module
