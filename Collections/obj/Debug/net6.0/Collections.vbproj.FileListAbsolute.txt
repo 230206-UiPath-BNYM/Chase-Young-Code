@@ -1,0 +1,15 @@
+C:\Revature\Chase-Young-Code\Collections\bin\Debug\net6.0\Collections.exe
+C:\Revature\Chase-Young-Code\Collections\bin\Debug\net6.0\Collections.deps.json
+C:\Revature\Chase-Young-Code\Collections\bin\Debug\net6.0\Collections.runtimeconfig.json
+C:\Revature\Chase-Young-Code\Collections\bin\Debug\net6.0\Collections.dll
+C:\Revature\Chase-Young-Code\Collections\bin\Debug\net6.0\Collections.pdb
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.vbproj.AssemblyReference.cache
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.AssemblyInfoInputs.cache
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.AssemblyInfo.vb
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.vbproj.CoreCompileInputs.cache
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.dll
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\refint\Collections.dll
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.pdb
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\Collections.genruntimeconfig.cache
+C:\Revature\Chase-Young-Code\Collections\obj\Debug\net6.0\ref\Collections.dll

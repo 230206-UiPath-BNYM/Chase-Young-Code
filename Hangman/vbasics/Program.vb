@@ -6,10 +6,14 @@ Module Program
 
         dim answer as String = ("program")
         dim blank as String = ("_ _ _ _ _ _ _")
+
         Console.WriteLine(blank)
+
         For index as Integer = 1 To 6
+
             Console.WriteLine("Enter guess: ")
             dim guess as String = Console.ReadLine()
+
             If guess = answer Then
                 Console.WriteLine("Correct! Good job!")
                 Exit For
@@ -19,4 +23,5 @@ Module Program
         Next
         
     End Sub
+    
 End Module
